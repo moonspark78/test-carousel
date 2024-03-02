@@ -20,6 +20,13 @@ export const Carousel = ({ data }) => {
             })
         }
       <FaArrowRight className="arrow arrow-right"/>
+      <span className="indicators">
+            {
+                data.map((_,idx) => {
+                    return <button key={idx} className={slide === idx ? "indicator" : "indicator indicator-inactive"}></button>
+            })
+            }
+      </span>
     </div>
   );
 };

@@ -22,8 +22,37 @@
 
 .arrow{
     position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
 }
 
-.arrow-left{}
+.arrow-left{
+    left: 16px;
+}
 
-.arrow-righr{}
+.arrow-right{
+    right: 16px;
+}
+
+.indicators{
+    position: absolute;
+    bottom: 13px;
+    display: flex;
+}
+
+
+.indicator{
+    background-color: white;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    margin: 0 0.2rem;
+}
+
+.indicator-inactive{
+    background-color: gray;
+}

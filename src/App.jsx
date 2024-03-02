@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import {Carousel} from "./components/Carousel"
+import slides from "./data/Carousel.json"
 
 function App() {
   return (
     <div className="App">
-      <Carousel/>
+      <Carousel data={slides.slides}/>
     </div>
   );
 }
